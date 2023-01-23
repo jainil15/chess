@@ -1,4 +1,7 @@
 class Square:
+    
+    
+    
     def __init__(self, row, col, piece=None):
         self.row = row
         self.col = col
@@ -29,3 +32,11 @@ class Square:
                 return False
 
         return True
+
+    @staticmethod
+    def get_alpha(col):
+        ALPHACOLS = {
+            0: 'a', 1: 'b', 2: 'c', 3: 'd', 4: 'e', 5: 'f', 6: 'g', 7: 'h'
+        }
+        return ALPHACOLS[col]
+        
